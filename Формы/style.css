@@ -1,0 +1,54 @@
+* {
+    font-family: sans-serif;
+}
+
+fieldset {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 320px;
+    max-height: 450px;
+}
+
+.one {
+    font-weight: 700;
+    margin: 8px 0 10px;
+}
+
+.two {
+    margin: 0 0 5px;
+}
+
+.high, textarea {
+    width: 75%;
+    padding: 5px;
+    margin: 0 0 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 50px;
+    max-height: 80px;
+}
+
+.cbword {
+    font-size: 13px;
+}
+
+.cb {
+    padding: 0px;
+    margin: 0px 0 10px;
+    display: inline;
+}
+
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 90px;
+    height: 25px;
+}
