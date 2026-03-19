@@ -5,39 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Формы</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <div class="one">Ваши личные данные</div>
-            <label >
-                <div class="two">Ваше имя</div>
-                <input class="high" type="text" name="name" placeholder="Имя" required>
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="form-group-title">Ваши личные данные</legend>
+            <label for="name" class="label">Ваше имя</label>
+            <input id="name" class="input" type="text" name="name" placeholder="Имя" required>
+            <label for="age" class="label">Ваш возраст</label>
+            <input id="age" class="input" type="number" name="age" placeholder="Возраст" required>
+            <label for="phone" class="label">Ваш номер телефона</label>
+            <input id="phone" class="input" type="tel" name="phone" placeholder="Номер телефона" required>
+            <label for="email" class="label">Ваша почта</label>
+            <input id="email" class="input" type="email" name="email" placeholder="Почта"
+            required>
+        </fieldset> 
+        <fieldset class="form-group">
+            <label for="message" class="label">Сообщение</label>
+            <textarea id="message" class="textarea" name="message" placeholder="Ваше сообщение" required></textarea>
+            <label class="label checkbox-label">
+                <input class="checkbox" type="checkbox" name="rules" required>
+                <span class="checkbox-text">Я принимаю правила</span>
             </label>
-            <label   >
-                <div class="two">Ваш возраст</div>
-                <input class="high" type="number" name="age" placeholder="Возраст">
-            </label>
-            <label  >
-                <div class="two">Ваш номер телефона</div>
-                <input class="high" type="tel" name="number" placeholder="Номер телефона">
-            </label>
-            <label  >
-                <div class="two">Ваша почта</div>
-                <input class="high" type="email" name="email" placeholder="Почта">
-            </label>
-            <label  >
-                <div class="two">Сообщение</div>
-                <textarea class="high" name="message" placeholder="Ваше сообщение"></textarea>
-            </label>
-            <label class="cbword" >
-                <input class="cb" type="checkbox" name="rules" required>
-                Я принимаю правила
-            </label>
-            <button>Отправить</button>
-        </fieldset>
+        </fieldset>    
+        <button class="button">Отправить</button>
     </form>
 </body>
 
